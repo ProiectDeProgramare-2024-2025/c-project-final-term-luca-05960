@@ -183,28 +183,28 @@ void cautaCameraTip() {
     int gasit = 0;
     for (int i = 0; i < nrCamere; i++) {
         if (strcmp(camere[i].tip, tipCautat) == 0) {
-            // Afișăm ID
+            // ID
             printf("ID: ");
             color("\033[1;34m");
             printf("%d", camere[i].id);
             reset_color();
             printf("\n");
 
-            // Afișăm tipul camerei
+            // tipul camerei
             printf("Tipul camerei: ");
             color("\033[1;34m");
             printf("%s", camere[i].tip);
             reset_color();
             printf("\n");
 
-            // Afișăm prețul pe noapte
+            // pretul pe noapte
             printf("Pret pe noapte: ");
             color("\033[1;32m");
             printf("%.2f RON", camere[i].pret);
             reset_color();
             printf("\n");
 
-            // Afișăm facilitățile
+            // facilitati
             printf("Facilitati: ");
             color("\033[1;35m");
             printf("%s", camere[i].facilitati);
@@ -220,7 +220,7 @@ void cautaCameraTip() {
     getchar(); getchar();
 }
 
-// Căutarea unei camere după o facilitate
+// cautare dupa o facilitate
 void cautaCameraFacilitati() {
     system(CLEAR);
     printSubmenuHeader("Cautare Camera După Facilitati");
@@ -234,28 +234,28 @@ void cautaCameraFacilitati() {
     int gasit = 0;
     for (int i = 0; i < nrCamere; i++) {
         if (strstr(camere[i].facilitati, facilitateCautata) != NULL) {
-            // Afișăm ID
+            // ID
             printf("ID: ");
             color("\033[1;34m");
             printf("%d", camere[i].id);
             reset_color();
             printf("\n");
 
-            // Afișăm tipul camerei
+            // tipul camerei
             printf("Tipul camerei: ");
             color("\033[1;34m");
             printf("%s", camere[i].tip);
             reset_color();
             printf("\n");
 
-            // Afișăm prețul pe noapte
+            // pretul pe noapte
             printf("Pret pe noapte: ");
             color("\033[1;32m");
             printf("%.2f RON", camere[i].pret);
             reset_color();
             printf("\n");
 
-            // Afișăm facilitățile
+            // facilitatile
             printf("Facilitati: ");
             color("\033[1;35m");
             printf("%s", camere[i].facilitati);
@@ -271,7 +271,7 @@ void cautaCameraFacilitati() {
     getchar(); getchar();
 }
 
-// Funcție pentru rezervarea unei camere
+// rezervare
 void rezervareCamera() {
     system(CLEAR);
     printSubmenuHeader("Rezervare Camera");
@@ -370,7 +370,7 @@ void rezervareCamera() {
     getchar(); getchar();
 }
 
-// Funcție pentru anularea unei rezervări
+// anulare rezervare
 void anuleazaRezervare() {
     system(CLEAR);
     printSubmenuHeader("Anulare Rezervare");
@@ -420,7 +420,7 @@ void anuleazaRezervare() {
     getchar(); getchar();
 }
 
-// Funcție pentru afișarea rezervărilor curente
+// afisarea rezervarilor curente
 void afiseazaRezervari() {
     system(CLEAR);
     printSubmenuHeader("Rezervari Curente");
@@ -503,7 +503,7 @@ void afiseazaRezervari() {
     getchar(); getchar();
 }
 
-// Meniul principal
+// meniu principal
 void meniuPrincipal() {
     int optiune;
     do {
